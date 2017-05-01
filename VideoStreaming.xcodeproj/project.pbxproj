@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271C3BFB1EB6CF45005EE4AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C3BFA1EB6CF45005EE4AA /* Extensions.swift */; };
+		27240D611EB7806400AC5490 /* BigSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27240D601EB7806400AC5490 /* BigSlider.swift */; };
 		27744BB11EB518000080E240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BB01EB518000080E240 /* AppDelegate.swift */; };
-		27744BB31EB518000080E240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BB21EB518000080E240 /* ViewController.swift */; };
+		27744BB31EB518000080E240 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BB21EB518000080E240 /* MovieViewController.swift */; };
 		27744BB61EB518000080E240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27744BB41EB518000080E240 /* Main.storyboard */; };
 		27744BB81EB518000080E240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27744BB71EB518000080E240 /* Assets.xcassets */; };
 		27744BBB1EB518000080E240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27744BB91EB518000080E240 /* LaunchScreen.storyboard */; };
 		27744BC61EB518000080E240 /* VideoStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BC51EB518000080E240 /* VideoStreamingTests.swift */; };
 		27744BD11EB518000080E240 /* VideoStreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BD01EB518000080E240 /* VideoStreamingUITests.swift */; };
+		27744BE01EB518140080E240 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27744BDF1EB518140080E240 /* AVFoundation.framework */; };
+		27744BE21EB5181A0080E240 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27744BE11EB5181A0080E240 /* AVKit.framework */; };
+		27744BE71EB5187A0080E240 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BE61EB5187A0080E240 /* MovieView.swift */; };
+		27744BE91EB518A10080E240 /* MoviePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27744BE81EB518A10080E240 /* MoviePlayer.swift */; };
+		2796DDB31EB51B1E00EBDECD /* MovieKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796DDB21EB51B1E00EBDECD /* MovieKeys.swift */; };
+		2796DDB71EB51EBE00EBDECD /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796DDB61EB51EBE00EBDECD /* MovieItem.swift */; };
+		2796DDBB1EB54F5B00EBDECD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796DDBA1EB54F5B00EBDECD /* NavigationController.swift */; };
+		2796DDC31EB5581C00EBDECD /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796DDC21EB5581C00EBDECD /* MainMenuViewController.swift */; };
+		2796DDC71EB599EC00EBDECD /* MovieExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796DDC61EB599EC00EBDECD /* MovieExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271C3BFA1EB6CF45005EE4AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		27240D601EB7806400AC5490 /* BigSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigSlider.swift; sourceTree = "<group>"; };
 		27744BAD1EB518000080E240 /* VideoStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27744BB01EB518000080E240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27744BB21EB518000080E240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27744BB21EB518000080E240 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		27744BB51EB518000080E240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27744BB71EB518000080E240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27744BBA1EB518000080E240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,15 @@
 		27744BCC1EB518000080E240 /* VideoStreamingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoStreamingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27744BD01EB518000080E240 /* VideoStreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamingUITests.swift; sourceTree = "<group>"; };
 		27744BD21EB518000080E240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27744BDF1EB518140080E240 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27744BE11EB5181A0080E240 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		27744BE61EB5187A0080E240 /* MovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		27744BE81EB518A10080E240 /* MoviePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePlayer.swift; sourceTree = "<group>"; };
+		2796DDB21EB51B1E00EBDECD /* MovieKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieKeys.swift; sourceTree = "<group>"; };
+		2796DDB61EB51EBE00EBDECD /* MovieItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		2796DDBA1EB54F5B00EBDECD /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		2796DDC21EB5581C00EBDECD /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		2796DDC61EB599EC00EBDECD /* MovieExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27744BE21EB5181A0080E240 /* AVKit.framework in Frameworks */,
+				27744BE01EB518140080E240 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +105,7 @@
 				27744BC41EB518000080E240 /* VideoStreamingTests */,
 				27744BCF1EB518000080E240 /* VideoStreamingUITests */,
 				27744BAE1EB518000080E240 /* Products */,
+				27744BDE1EB518140080E240 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				27744BB01EB518000080E240 /* AppDelegate.swift */,
-				27744BB21EB518000080E240 /* ViewController.swift */,
+				27744BE41EB5183F0080E240 /* Models */,
+				27744BE51EB518530080E240 /* Views */,
+				27744BE31EB518340080E240 /* Controllers */,
 				27744BB41EB518000080E240 /* Main.storyboard */,
 				27744BB71EB518000080E240 /* Assets.xcassets */,
 				27744BB91EB518000080E240 /* LaunchScreen.storyboard */,
@@ -123,6 +150,46 @@
 				27744BD21EB518000080E240 /* Info.plist */,
 			);
 			path = VideoStreamingUITests;
+			sourceTree = "<group>";
+		};
+		27744BDE1EB518140080E240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27744BE11EB5181A0080E240 /* AVKit.framework */,
+				27744BDF1EB518140080E240 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27744BE31EB518340080E240 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2796DDBA1EB54F5B00EBDECD /* NavigationController.swift */,
+				2796DDC21EB5581C00EBDECD /* MainMenuViewController.swift */,
+				27744BB21EB518000080E240 /* MovieViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		27744BE41EB5183F0080E240 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27744BE81EB518A10080E240 /* MoviePlayer.swift */,
+				2796DDB21EB51B1E00EBDECD /* MovieKeys.swift */,
+				2796DDB61EB51EBE00EBDECD /* MovieItem.swift */,
+				2796DDC61EB599EC00EBDECD /* MovieExporter.swift */,
+				271C3BFA1EB6CF45005EE4AA /* Extensions.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		27744BE51EB518530080E240 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27240D601EB7806400AC5490 /* BigSlider.swift */,
+				27744BE61EB5187A0080E240 /* MovieView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +260,7 @@
 				TargetAttributes = {
 					27744BAC1EB518000080E240 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KEKFU6H295;
 						ProvisioningStyle = Automatic;
 					};
 					27744BC01EB518000080E240 = {
@@ -259,8 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27744BB31EB518000080E240 /* ViewController.swift in Sources */,
+				27240D611EB7806400AC5490 /* BigSlider.swift in Sources */,
+				2796DDC31EB5581C00EBDECD /* MainMenuViewController.swift in Sources */,
+				2796DDB71EB51EBE00EBDECD /* MovieItem.swift in Sources */,
+				2796DDBB1EB54F5B00EBDECD /* NavigationController.swift in Sources */,
+				27744BB31EB518000080E240 /* MovieViewController.swift in Sources */,
+				2796DDC71EB599EC00EBDECD /* MovieExporter.swift in Sources */,
+				27744BE91EB518A10080E240 /* MoviePlayer.swift in Sources */,
+				27744BE71EB5187A0080E240 /* MovieView.swift in Sources */,
 				27744BB11EB518000080E240 /* AppDelegate.swift in Sources */,
+				271C3BFB1EB6CF45005EE4AA /* Extensions.swift in Sources */,
+				2796DDB31EB51B1E00EBDECD /* MovieKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KEKFU6H295;
 				INFOPLIST_FILE = VideoStreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaronJeffreyLiu.VideoStreaming;
@@ -426,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KEKFU6H295;
 				INFOPLIST_FILE = VideoStreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaronJeffreyLiu.VideoStreaming;
@@ -507,6 +586,7 @@
 				27744BD71EB518000080E240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27744BD81EB518000080E240 /* Build configuration list for PBXNativeTarget "VideoStreamingTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +595,7 @@
 				27744BDA1EB518000080E240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27744BDB1EB518000080E240 /* Build configuration list for PBXNativeTarget "VideoStreamingUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +604,7 @@
 				27744BDD1EB518000080E240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
